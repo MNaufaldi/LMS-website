@@ -1,8 +1,8 @@
 const Navbar = () => {
     return (
         <div>
-            <div className="ui left fixed vertical menu" style={{width: '17%'}}>
-                <div className="item acc" style= {{marginTop: '5%'}}>
+            <div className="ui left fluid vertical menu vertical-menu" >
+                <div className="item acc">
                     Acc info
                 </div>
                 <a className="active item">

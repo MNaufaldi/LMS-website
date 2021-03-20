@@ -4,11 +4,11 @@ const Header = () => {
        <header>
            <div className= "ui top stackable menu">
                <div className= "item">
-                   <img src="#"></img>
+                   Head
                </div>
                <div className="right menu">
                    <div className= "item"> 
-                        <a className= "item">Notifications?</a>
+                        <a className= "item">Profile?</a>
                    </div>
 
                     
