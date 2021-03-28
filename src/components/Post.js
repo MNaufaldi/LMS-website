@@ -1,36 +1,34 @@
-
-
-const Post = () => {
+const Post = ({ post }) => {
     return (
         <div className="column" style={{marginBottom: '5%'}}>
             <div className="ui card" style={{position: 'relative', width: '100%'}}>
                 <div className="content">
                     <img src="#" className="left floated mini ui image"></img>
                     <div className="header">
-                        Teacher's name
+                        {post.teacherName}
                     </div>
                     <div className="meta">
-                        Subject
+                        {post.subject}
                     </div>
                 </div>
                 <div className="content">
                     <div className="header">
-                        Title
+                        {post.title}
                     </div>
                     <div className="meta">
-                        due date
+                        {post.due}
                     </div>
                     <div className="description">
-                        <p>Content</p>
+                        <p>{post.content}</p>
                     </div>
-                    
+
                 </div>
-                
-                
+
+
             </div>
-            
+
         </div>
     )
 }
 
-export default Post
+    export default Post

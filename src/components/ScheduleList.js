@@ -1,28 +1,11 @@
-import React from 'react'
+import Schedule from './Schedule'
 
-const ScheduleList = () => {
+const ScheduleList = ({ schedules }) => {
     return (
         <div className="ui relaxed divided list">
-            <div className="item">
-                <div className="content">
-                    <div className="header">
-                        Subject
-                    </div>
-                    <div className="description">
-                        Time
-                    </div>
-                </div>
-            </div>
-            <div className="item">
-                <div className="content">
-                    <div className="header">
-                        Subject
-                    </div>
-                    <div className="description">
-                        Time
-                    </div>
-                </div>
-            </div>
+            {schedules.map((schedule) => (
+                <Schedule key={schedule.id} schedule={schedule}/>
+            ))}
         </div>
     )
 }
